@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOVEREIGN | Global Corporate Shield</title>
+    
+    <!-- Ultra-Elite Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,600&family=Inter:wght@200;400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- ARCHITECTURAL CSS ENGINE (NO JS) --- */
+        :root {
+            --gold: #d4af37;
+            --gold-glow: rgba(212, 175, 55, 0.4);
+            --obsidian: #050505;
+            --slate: #0f172a;
+            --glass: rgba(255, 255, 255, 0.02);
+            --border: rgba(212, 175, 55, 0.2);
+            --transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; cursor: crosshair; }
+        
+        html { 
+            scroll-behavior: smooth; 
+            background: var(--obsidian);
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* --- NAVIGATION --- */
+        nav {
+            position: fixed; top: 0; width: 100%; height: 90px;
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0 6%; z-index: 1000;
+            background: rgba(5, 5, 5, 0.9);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem; letter-spacing: 5px;
+            color: var(--gold); text-transform: uppercase;
+        }
+
+        .status-pulse {
+            display: flex; align-items: center; gap: 10px;
+            font-size: 0.6rem; letter-spacing: 2px; color: var(--gold);
+        }
+
+        .pulse {
+            width: 8px; height: 8px; background: var(--gold);
+            border-radius: 50%; animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(212, 175, 55, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0); }
+        }
+
+        /* --- HERO --- */
+        .hero {
+            height: 80vh; display: flex; align-items: center; justify-content: center;
+            position: relative; overflow: hidden;
+            background: linear-gradient(to bottom, transparent, var(--obsidian)),
+                        url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover; background-position: center;
+        }
+
+        .hero-content { text-align: center; z-index: 10; }
+        .hero-content h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(3rem, 10vw, 8rem);
+            line-height: 0.85; margin-bottom: 20px; font-style: italic;
+        }
+
+        /* --- BENTO-GRID --- */
+        .bento-grid {
+            padding: 100px 6%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: 280px;
+            gap: 20px;
+            max-width: 1400px; margin: 0 auto;
+        }
+
+        .bento-card {
+            position: relative; border-radius: 2px;
+            overflow: hidden; border: 1px solid var(--border);
+            transition: var(--transition);
+        }
+
+        .bento-card img {
+            width: 100%; height: 100%; object-fit: cover;
+            filter: contrast(1.1) brightness(0.7) grayscale(1);
+            transition: var(--transition);
+        }
+
+        .bento-card:hover {
+            border-color: var(--gold);
+            box-shadow: 0 0 30px var(--gold-glow);
+            transform: scale(0.98);
+        }
+
+        .bento-card:hover img { filter: grayscale(0) brightness(1); transform: scale(1.1); }
+
+        .card-large { grid-column: span 2; grid-row: span 2; }
+        .card-tall { grid-row: span 2; }
+
+        .card-label {
+            position: absolute; bottom: 20px; left: 20px;
+            background: var(--obsidian); padding: 5px 15px;
+            border-left: 2px solid var(--gold);
+            font-size: 0.7rem; letter-spacing: 2px; text-transform: uppercase;
+        }
+
+        /* --- UPDATED PROTOCOL BUTTON --- */
+        .protocol-section {
+            padding: 150px 6%;
+            text-align: center;
+            background: #080808;
+            border-top: 1px solid var(--border);
+        }
+
+        .terminal-box {
+            max-width: 500px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        #protocol-switch { display: none; }
+
+        .initialize-btn {
+            display: inline-block;
+            padding: 25px 50px;
+            background: var(--gold); /* Changed to Solid Gold */
+            border: 1px solid var(--gold);
+            color: var(--obsidian); /* Dark text for contrast */
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            cursor: pointer;
+            position: relative;
+            transition: var(--transition);
+            z-index: 5;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .initialize-btn:hover {
+            background: #e5c158; /* Lighter gold on hover */
+            box-shadow: 0 0 40px var(--gold-glow);
+            transform: translateY(-3px);
+            letter-spacing: 6px;
+        }
+
+        /* The Reveal Animation */
+        .secure-data {
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+            background: rgba(255, 255, 255, 0.02);
+            margin-top: 0;
+            border: 0 solid var(--border);
+            text-align: left;
+        }
+
+        /* WHEN CHECKED */
+        #protocol-switch:checked ~ .secure-data {
+            max-height: 500px;
+            opacity: 1;
+            margin-top: 30px;
+            padding: 30px;
+            border: 1px solid var(--border);
+        }
+
+        #protocol-switch:checked ~ .initialize-btn {
+            background: transparent;
+            color: var(--gold);
+            border: 1px solid var(--border);
+            pointer-events: none;
+            box-shadow: none;
+            transform: scale(0.95);
+        }
+
+        /* Typewriter text */
+        .terminal-text {
+            font-family: monospace;
+            color: var(--gold);
+            font-size: 0.85rem;
+            margin-bottom: 10px;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 0;
+        }
+
+        #protocol-switch:checked ~ .secure-data .terminal-text {
+            animation: type 2s steps(40) forwards;
+        }
+
+        #protocol-switch:checked ~ .secure-data .terminal-text:nth-child(2) { animation-delay: 1s; }
+        #protocol-switch:checked ~ .secure-data .terminal-text:nth-child(3) { animation-delay: 2s; }
+
+        @keyframes type {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        .access-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background: #fff;
+            color: #000;
+            text-decoration: none;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: 0.5s ease;
+            transition-delay: 3s;
+        }
+
+        #protocol-switch:checked ~ .secure-data .access-link {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            padding: 60px 6%;
+            border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+            font-size: 0.6rem; letter-spacing: 2px; color: #444;
+        }
+
+        /* --- MOBILE --- */
+        @media (max-width: 1024px) {
+            .bento-grid { grid-template-columns: repeat(2, 1fr); }
+            .card-large { grid-column: span 2; }
+        }
+
+        @media (max-width: 600px) {
+            .bento-grid { grid-template-columns: 1fr; grid-auto-rows: 250px; }
+            .card-large, .card-tall { grid-column: span 1; grid-row: span 1; }
+            .hero-content h1 { font-size: 3.5rem; }
+            .initialize-btn { width: 100%; font-size: 0.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Sovereign</div>
+        <div class="status-pulse">
+            <div class="pulse"></div>
+            SYSTEM SECURE // PROTOCOL ACTIVE
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <p style="letter-spacing: 10px; color: var(--gold); margin-bottom: 20px;">ESTABLISHED 1984</p>
+            <h1>Sovereign <i>Shield</i></h1>
+        </div>
+    </section>
+
+    <section class="bento-grid">
+        <div class="bento-card card-large">
+            <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1200&q=80" alt="Strategy">
+            <div class="card-label">Strategic Counsel</div>
+        </div>
+        <div class="bento-card">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Governance">
+            <div class="card-label">Corporate Defense</div>
+        </div>
+        <div class="bento-card card-tall">
+            <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=800&q=80" alt="Litigation">
+            <div class="card-label">High-Stakes Litigation</div>
+        </div>
+        <div class="bento-card">
+            <img src="https://images.unsplash.com/photo-1510074377623-8cf13fb86c08?auto=format&fit=crop&w=800&q=80" alt="IP">
+            <div class="card-label">Intellectual Assets</div>
+        </div>
+        <div class="bento-card card-large">
+            <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1200&q=80" alt="Global">
+            <div class="card-label">International Jurisdiction</div>
+        </div>
+        <div class="bento-card">
+            <img src="Law.jpg" alt="Signature">
+            <div class="card-label">M&A Protocol</div>
+        </div>
+    </section>
+
+    <section class="protocol-section">
+        <div class="terminal-box">
+            <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 3rem; color: var(--gold); margin-bottom: 40px;">Request Counsel</h2>
+            
+            <input type="checkbox" id="protocol-switch">
+            
+            <label for="protocol-switch" class="initialize-btn" style="border-radius:5px">
+                Initialize Protocol
+            </label>
+
+            <div class="secure-data">
+                <div class="terminal-text">VERIFYING_CREDENTIALS... DONE</div>
+                <div class="terminal-text">DECRYPTING_SECURE_NODE... ACCESS GRANTED</div>
+                <div class="terminal-text">ESTABLISHING_SWISS_UPLINK... ENCRYPTED</div>
+                
+                <p style="font-size: 0.8rem; color: #888; margin-top: 15px;">
+                    Authentication Successful. Private communication line open.
+                </p>
+                
+                <a href="https://proton.me/mail" target="_blank" class="access-link">
+                    Open Secure Uplink
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div>&copy; 2024 SOVEREIGN LEGAL GLOBAL</div>
+        <div>AES-256 ENCRYPTION DETECTED // NO-LOG POLICY</div>
+    </footer>
+
+</body>
+</html>
+
