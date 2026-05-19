@@ -1,0 +1,113 @@
+{
+    "firm": {
+        "name": "CHANCERY ELITE",
+        "tagline": "Premier Global Advocacy & Strategic Defense",
+        "established": "2026",
+        "contact": {
+            "email": "ahsanursayan942@gmail.com",
+            "name": "Ahsan Ur Sayan",
+            "phone": "+44 20 7946 0321",
+            "address": "One Canada Square, Canary Wharf, London E14 5AB",
+            "hours": "24/7 Crisis Response"
+        },
+        "stats": [
+            { "value": "£2B+", "label": "Assets Defended" },
+            { "value": "42",   "label": "Jurisdictions" },
+            { "value": "24/7", "label": "Crisis Response" },
+            { "value": "97%",  "label": "Verdict Record" }
+        ]
+    },
+    "expertise": [
+        { "title": "AI Law",        "desc": "Algorithm liability & generative AI defense",     "icon": "⚖" },
+        { "title": "Criminal Law",  "desc": "Elite white-collar defense & investigations",      "icon": "◈" },
+        { "title": "Divorce Law",   "desc": "High-net-worth complex asset strategy",            "icon": "◇" },
+        { "title": "Tech Law",      "desc": "Data sovereignty & IP litigation",                 "icon": "◉" },
+        { "title": "Corporate",     "desc": "High-stakes shareholder dispute management",       "icon": "◆" },
+        { "title": "Crisis Mgmt",   "desc": "Immediate reputational & legal intervention",      "icon": "◎" },
+        { "title": "Maritime",      "desc": "Complex shipping & admiralty claims",              "icon": "◐" },
+        { "title": "Arbitration",   "desc": "Global tribunal & treaty representation",          "icon": "◑" },
+        { "title": "Sovereign Law", "desc": "State-owned asset & immunity defense",             "icon": "◒" }
+    ],
+    "leadership": [
+        {
+            "name": "Julian Vane, KC",
+            "role": "King's Counsel — Trial Division",
+            "specialty": "White-Collar & Sovereign Defense",
+            "record": "Undefeated in 34 international proceedings",
+            "img": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80"
+        },
+        {
+            "name": "Sarah Sterling",
+            "role": "Lead Advocate — International Chamber",
+            "specialty": "Cross-Border Asset Litigation",
+            "record": "£840M recovered across 12 jurisdictions",
+            "img": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80"
+        },
+        {
+            "name": "Marcus Thorne",
+            "role": "Senior Partner — Corporate Division",
+            "specialty": "AI Law & Governance Frameworks",
+            "record": "Authored landmark UK AI liability statute",
+            "img": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=800&q=80"
+        },
+        {
+            "name": "Elena Rossi",
+            "role": "International Counsel — EU Chamber",
+            "specialty": "Maritime & Admiralty Law",
+            "record": "Lead counsel in 9 ICC arbitrations",
+            "img": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=800&q=80"
+        }
+    ],
+    "associates": [
+        { "name": "Arthur Dent",  "role": "Senior Associate", "img": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80", "bio": "Expert in Matrimonial Asset Division across EU jurisdictions." },
+        { "name": "Clara Oswald", "role": "Associate",        "img": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=400&q=80", "bio": "Focuses on White-Collar Defense and Securities Fraud." },
+        { "name": "Ben Solo",     "role": "Associate",        "img": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80", "bio": "Advisor for Sovereign Immunity and ICSID proceedings." },
+        { "name": "Diana Prince", "role": "Associate",        "img": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80", "bio": "Global Arbitration expert and treaty specialist." },
+        { "name": "Bruce Wayne",  "role": "Associate",        "img": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80", "bio": "Crisis Management, PR Defense, and board-level counsel." },
+        { "name": "Selina Kyle",  "role": "Associate",        "img": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80", "bio": "Privacy Sovereignty and GDPR enforcement specialist." },
+        { "name": "Harvey Dent",  "role": "Associate",        "img": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80", "bio": "Lead for Corporate Governance disputes and M&A conflicts." },
+        { "name": "Iris West",    "role": "Associate",        "img": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80", "bio": "Family Law, International Relocation, and Hague Convention." },
+        { "name": "Barry Allen",  "role": "Associate",        "img": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80", "bio": "IP Defense, Tech Patent Law, and AI regulatory compliance." },
+        { "name": "Wally West",   "role": "Associate",        "img": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80", "bio": "Maritime Law, Admiralty Counsel, and shipping contract disputes." }
+    ],
+    "pillars": [
+        { "title": "Sovereign Defense",      "text": "Protecting state assets and high-profile individuals with unparalleled diplomatic and legal precision at the highest levels of global authority." },
+        { "title": "Unrivaled Discretion",   "text": "Managing high-profile reputational risks with total anonymity, strategic silence, and airtight attorney-client privilege across every jurisdiction." },
+        { "title": "Global Reach",           "text": "Coordinating complex multi-party litigation across 42 jurisdictions, international tribunals, and arbitral bodies on six continents." },
+        { "title": "Architectural Strategy", "text": "We do not merely respond to legal threats — we architect the frameworks that prevent them, ensuring long-term strategic stability for every client." }
+    ],
+    "lawyers": [
+        { "name": "Julian Vane, KC",    "role": "King's Counsel — Trial Division",        "id": "l1" },
+        { "name": "Sarah Sterling",     "role": "Lead Advocate — International Chamber",  "id": "l2" },
+        { "name": "Marcus Thorne",      "role": "Senior Partner — Corporate Division",    "id": "l3" },
+        { "name": "Elena Rossi",        "role": "International Counsel — EU Chamber",     "id": "l4" },
+        { "name": "Arthur Dent",        "role": "Senior Associate — Family Law",          "id": "l5" },
+        { "name": "Clara Oswald",       "role": "Associate — White-Collar Defense",       "id": "l6" },
+        { "name": "Ben Solo",           "role": "Associate — Sovereign Immunity",         "id": "l7" },
+        { "name": "Diana Prince",       "role": "Associate — Global Arbitration",         "id": "l8" },
+        { "name": "Harvey Dent",        "role": "Associate — Corporate Governance",       "id": "l9" },
+        { "name": "Barry Allen",        "role": "Associate — IP & Tech Patent Law",       "id": "l10" },
+        { "name": "Selina Kyle",        "role": "Associate — GDPR & Privacy Law",        "id": "l11" },
+        { "name": "Wally West",         "role": "Associate — Maritime & Admiralty",       "id": "l12" }
+    ],
+    "matters": [
+        { "title": "Divorce & Separation",          "desc": "Contested or uncontested dissolution of marriage" },
+        { "title": "Marriage & Civil Partnership",  "desc": "Pre-nuptial agreements and partnership contracts" },
+        { "title": "Child Custody & Access",        "desc": "Parental rights, residence and contact orders" },
+        { "title": "High-Net-Worth Asset Division", "desc": "Complex financial remedy and asset splitting" },
+        { "title": "White-Collar Criminal Defense", "desc": "Fraud, bribery, insider trading investigations" },
+        { "title": "Corporate Dispute & M&A",       "desc": "Shareholder conflicts and merger litigation" },
+        { "title": "International Arbitration",     "desc": "ICC, LCIA and ICSID tribunal representation" },
+        { "title": "AI & Technology Liability",     "desc": "Algorithm negligence and data breach claims" },
+        { "title": "Sovereign & State Defense",     "desc": "State immunity and diplomatic asset protection" },
+        { "title": "Maritime & Admiralty Claim",    "desc": "Shipping contracts and admiralty disputes" },
+        { "title": "Reputational Crisis Mgmt",      "desc": "Emergency injunctions and PR legal defense" },
+        { "title": "Immigration & Relocation",      "desc": "International family relocation and Hague Convention" }
+    ],
+    "cases": [
+        { "title": "Sovereign Asset Recovery",  "value": "£420M", "jurisdiction": "ICC — London / Geneva",  "year": "2025" },
+        { "title": "AI Liability Class Action",  "value": "£180M", "jurisdiction": "UK Supreme Court",        "year": "2025" },
+        { "title": "Cross-Border M&A Dispute",   "value": "£260M", "jurisdiction": "DIFC — Dubai",            "year": "2024" },
+        { "title": "Maritime Arbitration",       "value": "£95M",  "jurisdiction": "LMAA — London",           "year": "2024" }
+    ]
+}
